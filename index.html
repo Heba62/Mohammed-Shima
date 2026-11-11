@@ -427,14 +427,14 @@ html.invitation-revealing .wrap { opacity:1; transform:translateY(0); }
     <h3 class="script" style="font-size:30px">January 2027</h3>
     <div class="grid" id="cal"></div>
   </div>
-  <div class="calbtn"><a class="btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Mohammad+%26+Shima%27s+Wedding&amp;dates=20270102%2F20270103&amp;details=Evening+event.+Exact+time+to+be+announced.&amp;location=Al+Zahia+Wedding+Hall%2C+Dubai" target="_blank" rel="noopener">Add to Google Calendar</a></div>
+  <div class="calbtn"><a class="btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Mohammad+%26+Shima%27s+Wedding&amp;dates=20270102T200000%2F20270102T235900&amp;ctz=Asia%2FDubai&amp;details=Wedding+starts+at+8%3A00+PM+%28UAE+time%29.&amp;location=Al+Zahia+Wedding+Hall%2C+Dubai" target="_blank" rel="noopener">Add to Google Calendar</a></div>
 </section>
 
 <section class="olive card" style="margin-top:0"><i class="fl horiz" aria-hidden="true" style="left:-12px;bottom:6px;width:160px"></i><i class="fl rose" aria-hidden="true" style="right:-14px;top:62px;width:70px;transform:rotate(14deg)"></i>
   <div class="lace" aria-hidden="true"></div>
   <h2 class="tmh">Timing</h2>
-  <p class="evening">In the evening</p>
-  <p class="evnote">The exact time will be announced soon</p>
+  <p class="evening">8:00 PM</p>
+  <p class="evnote">UAE time &middot; Dubai</p>
   <p class="script cdh">Until we meet</p>
   <div class="count" id="count" aria-label="Countdown to the wedding">
     <div><b id="d">00</b><small>days</small></div><div><b id="h">00</b><small>hours</small></div><div><b id="m">00</b><small>min</small></div><div><b id="s">00</b><small>sec</small></div>
@@ -488,7 +488,7 @@ html.invitation-revealing .wrap { opacity:1; transform:translateY(0); }
   function play(){sw.classList.remove("go");void sw.offsetWidth;sw.classList.add("go")}
   document.addEventListener("invite-open",play);
   sw.addEventListener("click",play);
-  var target=new Date("2027-01-02T18:00:00+04:00");
+  var target=new Date("2027-01-02T20:00:00+04:00");
   function p(n){return String(n).padStart(2,"0")}
   function tick(){
     var t=Math.max(0,target-new Date()),
